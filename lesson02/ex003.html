@@ -22,10 +22,15 @@
     <p>Me livrei da maldição.</p>
     <p>Comentários em Js é similar a C e Java (// /**/)</p>
     <script>
-        var age = window.prompt('Qual sua idade?')
-        var year = window.prompt('Qual o ano atual?')
-        var birthYear = year - age
+        var age = Number(window.prompt('Qual sua idade?'))
+        var year = Number(window.prompt('Qual o ano atual?'))
+        var birthYear = year - age // A subtração funciona da maneira "desejada"
+        //Mas a soma não
+        var sum = age + year
+        window.alert('tipos sao ' + typeof(age) + ' ' + typeof(year)) // Vem em tipo String do prompt
         window.alert('Seu ano de nascimento é ' + birthYear)
+        //Necessario converter anteriormente pra inteiro, concatenou em soma
+        window.alert('A soma dos numeros é ' + sum) 
     </script>
 </body>
 </html>
