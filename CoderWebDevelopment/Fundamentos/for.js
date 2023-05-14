@@ -28,3 +28,10 @@ const pessoa = {
 for(let atributo in pessoa){
     console.log(atributo + ' = ' + pessoa[atributo])
 }
+
+externo: for (a in notas){
+    for (b in notas) {
+        if(notas[a] == 7.4 && notas[b] == 8.1) break externo
+        console.log('Par = ' + notas[a] + ' ' + notas[b]) 
+    }
+}
