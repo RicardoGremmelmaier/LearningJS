@@ -7,3 +7,26 @@ arredondamento pois esta nota resulta na reprovação do aluno. Por exemplo, a n
 seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
 e o aluno será aprovado. */
 
+function atualizaNota(nota){
+    if(nota < 0 || nota > 100)
+        return "Nota inválida"
+    notaFinal = nota
+    if(nota < 38)
+        return notaFinal
+    else{
+        if (nota % 5 > 2)
+            return notaFinal + (5 - nota % 5)
+        return notaFinal
+    } 
+        
+}
+
+console.log(atualizaNota(38))
+console.log(atualizaNota(37))
+console.log(atualizaNota(29))
+console.log(atualizaNota(84))
+console.log(atualizaNota(86))
+console.log(atualizaNota(90))
+console.log(atualizaNota(100))
+console.log(atualizaNota(101))
+console.log(atualizaNota(-1))
