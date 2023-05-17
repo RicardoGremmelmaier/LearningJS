@@ -19,3 +19,5 @@ values
     (1, 2, 0),
     (2, 1, 0),
     (2, 2, 1);
+
+select * from empresas_unidades
