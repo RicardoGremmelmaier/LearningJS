@@ -70,4 +70,12 @@ console.log(Object.keys(filha2))
 for(let key in filha2){
    filha2.hasOwnProperty(key) ?
       console.log(key) : console.log('Por herança: ' + key)
+}  
+
+//String, Array e Object são funções e todas funções tem .prototype, ou seja, da criar coisas tipo
+
+String.prototype.reverse = function() {
+   return this.split('').reverse().join('')
 }
+
+console.log('ricardo marthus gremmelmaier'.reverse())
