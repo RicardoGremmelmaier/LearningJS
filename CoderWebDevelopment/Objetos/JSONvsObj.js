@@ -1,0 +1,1 @@
+//JSON é formato de dados, e não um objeto, é um formato textual, simples e usado parar ler em qualquer linguagem
