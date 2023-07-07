@@ -32,3 +32,13 @@ const paraObj = json => JSON.parse(json)
 const precos = carrinho.map(paraObj).map(retornarPreco)
 
 console.log(precos)
+
+//implementando
+
+Array.prototype.map2 = function(callback){
+    const out = []
+    for(let i = 0; i < this.length; i++){
+        out.push(callback(this[i], i, this))
+    }
+    return out
+}
