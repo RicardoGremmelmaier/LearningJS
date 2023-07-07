@@ -9,3 +9,11 @@ aprovados.forEach(function(nome, indice){
 
 const exibirAprovados = aprovado => console.log(aprovado)
 aprovados.forEach(exibirAprovados)
+
+//Implementacao do forEach
+
+Array.prototype.forEach2 = function (callback){
+    for(let i = 0; i < this.length; i++){
+        callback(this[i], i, this)
+    }
+}
