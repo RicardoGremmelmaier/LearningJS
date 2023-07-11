@@ -20,7 +20,7 @@ Object.defineProperty(pessoa, 'dataNascimento', {
 
 pessoa.dataNascimento = '01/01/2020'
 console.log(pessoa.dataNascimento) //2023 
-console.log(pessoa.keys(pessoa))
+console.log(Object.keys(pessoa))
 
 const dest = {a: 1}
 const o1 = {b: 2}
