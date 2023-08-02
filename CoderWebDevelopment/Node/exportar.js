@@ -13,3 +13,5 @@ exports = {
 }
 
 console.log(module.exports)
+
+module.exports = {teste: 'teste'}
